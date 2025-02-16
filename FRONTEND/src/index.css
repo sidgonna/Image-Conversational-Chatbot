@@ -1,0 +1,176 @@
+/*IMAGE-CONVERSATIONAL-CHATBOT is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+IMAGE-CONVERSATIONAL-CHATBOT is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with IMAGE-CONVERSATIONAL-CHATBOT.  If not, see <https://www.gnu.org/licenses/>. */
+
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary{
+    background-color: #F95333;
+}
+
+.bg-second{
+   background-color: #2B2F41;
+}
+
+.text-primary{
+    color: #F95333;
+}
+
+.text-second{
+   color: #2B2F41;
+}
+
+.no-of-error{
+    border: 2px solid #8787878e;
+    margin-right: 0.5rem;
+    font-weight: 700;
+}
+
+.word{
+    display: inline-block;
+    padding: 0px 0.25rem;
+    margin-bottom: 2px;
+    /* margin-left: 0.2rem; */
+    /* margin: 0px 2px; */
+}
+
+.mispronounsed_word{
+    color: #000000;
+    background-color: #ffc800;
+    /* text-decoration:line-through; */
+    border-radius: 3px;
+}
+
+.context_popup_card{
+    visibility: hidden;
+    /* width: max-content; */
+    background-color: rgba(255, 255, 255, 0.853);
+    text-align: center;
+    border-radius: 6px;
+    margin-top: -70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* padding: 2px 2px; */
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  } 
+
+
+.mispronounsed_word:hover .context_popup_card{
+    visibility:visible;
+    /* text-decoration:line-through; */
+}
+
+
+
+.unexpected_break_word{
+    background-color: #ffacac;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    padding: 0 0.5rem;
+    border-right: #000000 0.15rem solid;
+    border-left: #000000 0.15rem solid;
+}
+
+.missing_break_word{
+    background-color: #b8b8b8;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    padding: 0 1.5rem;
+    border-right: #6e6e6e 0.25rem solid;
+    border-left: #6e6e6e 0.25rem solid;
+}
+
+.monoton_word{
+    color: #080000;
+    /* background-color: #00000006; */
+    margin-bottom: -2px;
+    border-bottom:rgb(119, 0, 255) solid 4px;
+}
+
+.omission_word{
+    color: #000000;
+    background-color: #6363636c;
+    text-decoration:line-through;
+    /* border-radius: 3px; */
+}
+
+.insertions_word{
+    color: #ffffff;
+    background-color: #e52600;
+    text-decoration:line-through;
+    /* border-radius: 3px; */
+}
+
+.active-btn1 {
+    background: #ff0000; 
+    border-radius: 9999px; 
+    border: 1px solid #e1e1e1;
+    color: #ffffff;
+}
+
+.active-btn2 {
+    background: #3f3f3f; 
+    border-radius: 9px; 
+    border: 2px solid #ff0000;
+    color: #ffffff;
+}
+.body {
+    padding-top: 64px; /* Adjust this value based on your navbar height */
+}
+/* styles.css */
+.scrollbar-track-y {
+    background-color: transparent;
+    z-index: 100;
+    width: 8px !important;
+    border-radius: 8px;
+    right: 2px !important;
+}
+
+.scrollbar-thumb-y {
+    background-color: #4a5568;
+    border-radius: 8px;
+}
+
+.scrollbar-thumb-y:hover {
+    background-color: #718096;
+}
+/* Add this to your global CSS or a specific CSS file */
+
+@media (max-width: 1024px) {
+    .scrollbar-track-y {
+      right: 0; /* Ensures scrollbar is visible in mobile view */
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .scrollbar-thumb-y {
+      background-color: #cccccc; /* Lighten scrollbar thumb for better visibility */
+    }
+  
+    .p-4 {
+      padding: 1rem !important; /* Adjust padding for mobile view */
+    }
+  
+    .text-lg {
+      font-size: 1rem; /* Adjust text size for mobile */
+    }
+  
+    .border-gray-300 {
+      border-color: #d1d5db; /* Lighten border for mobile view */
+    }
+  }
+  /* Custom scrollbar styles */
